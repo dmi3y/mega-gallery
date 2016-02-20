@@ -1,0 +1,149 @@
+.gallery-coverflow {
+  position: relative; }
+  .gallery-coverflow .arw-left,
+  .gallery-coverflow .arw-right {
+    margin-top: -5px; }
+  .gallery-coverflow .gallery-coverflow-inner {
+    position: relative;
+    height: 312px; }
+  .gallery-coverflow .coverflow-holder {
+    position: absolute;
+    z-index: 0;
+    top: 40px;
+    font-size: 0;
+    margin: 0 15px;
+    right: 551px;
+    left: 0;
+    background: #fff; }
+    .gallery-coverflow .coverflow-holder div,
+    .gallery-coverflow .coverflow-holder .fimg {
+      opacity: 0.4;
+      filter: alpha(opacity=40); }
+    .gallery-coverflow .coverflow-holder .fimg {
+      width: 377px;
+      height: 236px;
+      overflow: hidden;
+      text-align: center;
+      background: #E9E6E6; }
+    .gallery-coverflow .coverflow-holder .lgd {
+      width: 290px;
+      padding: 5px 10px;
+      display: none;
+      position: absolute;
+      right: -260px;
+      top: 18px;
+      bottom: 18px;
+      background: #000;
+      background: rgba(0, 0, 0, 0.75);
+      z-index: 10; }
+      .gallery-coverflow .coverflow-holder .lgd h2 a {
+        display: block;
+        overflow: hidden;
+        text-overflow: ellipsis; }
+      .gallery-coverflow .coverflow-holder .lgd .txt {
+        font-family: Georgia, serif;
+        font-size: 14px;
+        font-style: normal;
+        line-height: 20px;
+        text-transform: inherit;
+        margin: 3px 0;
+        border-top: 2px dotted #727272;
+        padding: 5px 0; }
+      .gallery-coverflow .coverflow-holder .lgd .btnRead a,
+      .gallery-coverflow .coverflow-holder .lgd .comments .text {
+        color: white; }
+  .gallery-coverflow .cur {
+    left: 117px;
+    right: 350px;
+    z-index: 100;
+    top: 0; }
+    .gallery-coverflow .cur div,
+    .gallery-coverflow .cur .fimg {
+      opacity: 1;
+      filter: alpha(opacity=100); }
+    .gallery-coverflow .cur .fimg {
+      width: 465px;
+      height: 310px; }
+    .gallery-coverflow .cur .lgd {
+      display: block; }
+    .gallery-coverflow .cur + li {
+      z-index: 50; }
+    .gallery-coverflow .cur ~ li {
+      right: 0;
+      left: 551px; }
+  .gallery-coverflow .moving {
+    z-index: 200; }
+    .gallery-coverflow .moving > div, .gallery-coverflow .moving > a img {
+      opacity: 1;
+      filter: alpha(opacity=100); }
+
+.f-lft {
+  float: left; }
+
+.f-rgt {
+  float: right; }
+
+/* dark style overrides, for a now it is defined by .dark class into the body tag */
+.dark {
+  background-color: #060506;
+  color: #f1f1f1; }
+  .dark .combobox,
+  .dark .combobox span.arrow {
+    border-color: #8b8b8b; }
+  .dark #footer .corner {
+    border-right: 35px solid #060506; }
+  .dark .section-header {
+    background: url("data:image/gif;base64,R0lGODlhAwATAKEDACQjIzQ0NExLS////yH5BAEKAAMALAAAAAADABMAAAIIjIWpy+3PgCwAOw==") repeat-x 0 5px; }
+    .dark .section-header i {
+      border-color: #060506;
+      background-position: 3px -253px; }
+    .dark .section-header .httl {
+      background: #979797; }
+  .dark .btn.btnMore a {
+    border-color: #060506; }
+  .dark .arw-left-big,
+  .dark .arw-right-big {
+    background-color: #CACACA;
+    background-color: rgba(202, 202, 202, 0.5);
+    background-position: 4px -501px; }
+  .dark .arw-right-big {
+    background-position: -4px -401px; }
+  .dark .advert {
+    background-image: url(/web/20130307172839/http://cdn-media.hollywood.com/bundles/website/images/site/dark/ajax-loader.gif); }
+  .dark h1,
+  .dark h2,
+  .dark h3,
+  .dark h5 {
+    color: #fff; }
+    .dark h1 a,
+    .dark h2 a,
+    .dark h3 a,
+    .dark h5 a {
+      color: #fff; }
+      .dark h1 a:hover,
+      .dark h2 a:hover,
+      .dark h3 a:hover,
+      .dark h5 a:hover {
+        color: #ea2727; }
+  .dark .colorBlack {
+    color: #231f20; }
+  .dark #disqus_thread {
+    color: #231f20; }
+
+.arw-left-big,
+.arw-right-big {
+  position: absolute;
+  top: 50%;
+  width: 31px;
+  height: 100px;
+  margin-top: -50px;
+  background: black url(/web/20130307172839/http://cdn-media.hollywood.com/bundles/website/images/site/sprite-pagi-nav.png) 4px -297px no-repeat;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 300; }
+
+.arw-right-big {
+  right: 0;
+  background-position: -5px -199px; }
+
+.arw-left-big {
+  left: 0; }
