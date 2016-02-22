@@ -1,0 +1,12 @@
+.moving {
+    z-index: 200;
+
+    > {
+        .mg-item-teaser,
+        .mg-item-image {
+            opacity: 1;
+        }
+
+    }
+
+}

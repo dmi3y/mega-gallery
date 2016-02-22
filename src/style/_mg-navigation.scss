@@ -1,0 +1,21 @@
+.mg-navigate-left,
+.mg-navigate-right {
+  position: absolute;
+  top: 50%;
+  width: 31px;
+  height: 100px;
+  margin-top: -50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 300;
+}
+
+.mg-navigate-left {
+  left: 0;
+  background: #000;
+}
+
+.mg-navigate-right {
+  right: 0;
+  background: #000;
+  background-position: -5px -199px;
+}
