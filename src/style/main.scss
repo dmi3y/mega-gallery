@@ -1,9 +1,9 @@
 /**
- * Settings and includes
+ * Settings and imports
  *
  */
 
-@include _mg-gallery
-@include _mg-navigation
-@include _mg-item
-@include _mg-item-transition
+@import "mg-body";
+@import "mg-navigation";
+@import "mg-item";
+@import "mg-item-transition";
