@@ -29,12 +29,13 @@
         background: rgba(0, 0, 0, 0.75);
         z-index: 10;
 
-        a {
+    }
+        .mg-teaser-header {
             display: block;
             overflow: hidden;
             text-overflow: ellipsis;
         }
-    }
+        
         .mg-item-text {
             font-family: Georgia, serif;
             font-size: 14px;
