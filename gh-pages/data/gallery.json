@@ -1,0 +1,14 @@
+{
+	"items": [
+		{
+			"teaser": {
+				"header": "Here You go!",
+				"text": "loremLorem ipsum Laboris Excepteur do eu consequat enim veniam quis id in eu officia in magna aute qui in."
+			},
+			"image": {
+				"src": "https://goo.gl/photos/xNXeJAoXCRoLuUmg7",
+				"alt": "San Francisco Ferry Building."
+			}
+		}
+	]
+}
