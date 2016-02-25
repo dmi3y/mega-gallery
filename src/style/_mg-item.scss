@@ -55,9 +55,13 @@
     top: 0;
     opacity: 1;
 
+    .mg-item-teaser {
+        display: block;
+    }
+
     .mg-item-image {
         width: 465px;
-        height: 310px;
+        height: 262px;
     }
 
     + li {
