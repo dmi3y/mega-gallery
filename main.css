@@ -75,9 +75,11 @@
   z-index: 100;
   top: 0;
   opacity: 1; }
+  .mg-current .mg-item-teaser {
+    display: block; }
   .mg-current .mg-item-image {
     width: 465px;
-    height: 310px; }
+    height: 262px; }
   .mg-current + li {
     z-index: 50; }
   .mg-current ~ li {
