@@ -64,30 +64,32 @@ $(function galleryCoverflow() {
 
     $(bodyClass).each(function() { //assume if there will be several galleries of this type on the page
         var gallery = $(this),
-            it, st, cur, eds;
-            
-        gallery.data('hlpr', hlpr);
-        if ($(itemClass, gallery).length < 3) return; // temp solution 
-        var mga = gallery.attr('data-merrygoround') || 'on';
-        $('[data-navigation]', gallery).click(function() { //catching prev next buttons
-            if ($(movingClass, gallery).is('li')) return; //ban click on animation
-            cur = $(currentClass, gallery);
-            eds = $(itemClass, gallery).filter(":first, :last");
-            gallery.data('initData') ? '' : hlpr.init(cur, gallery); //get the initial values from the CSS
-            switch (st = $(this).data('navigation')) {
-                case 'l':
-                    it = cur.prev();
-                    break;
-                case 'r':
-                    it = cur.next();
-                    break;
-            }
-            if (it.is(eds)) gallery.trigger('beforegalleryslideend', st); //hook for helpers @REV question for optimization
-            if (it.is(eds) && mga == 'on') { //last items hook and check for merrygoround functionality
-                hlpr.cirle(it, st, cur, eds, gallery); /* here before animating might be done checking and ajax requests for more images either circling like now */
-            } else if (it.is('li')) { //normal rotation
-                hlpr.doclk(it, st, cur, gallery);
-            }
-        });
+            it, st, eds;
+
+        if ( $(itemClass, gallery).length > 3 ) {
+            var cur = gallery.find(itemClass).filter(":nth-child(2)");
+            cur.addClass(currentClass);
+            var mga = gallery.attr('data-merrygoround') || 'on';
+            $('[data-navigation]', gallery).click(function() { //catching prev next buttons
+                cur = $(currentClass, gallery);
+                if ($(movingClass, gallery).is('li')) return; //ban click on animation
+                eds = $(itemClass, gallery).filter(":first, :last");
+                gallery.data('initData') ? '' : hlpr.init(cur, gallery); //get the initial values from the CSS
+                switch (st = $(this).data('navigation')) {
+                    case 'l':
+                        it = cur.prev();
+                        break;
+                    case 'r':
+                        it = cur.next();
+                        break;
+                }
+                if (it.is(eds)) gallery.trigger('beforegalleryslideend', st); //hook for helpers @REV question for optimization
+                if (it.is(eds) && mga == 'on') { //last items hook and check for merrygoround functionality
+                    hlpr.cirle(it, st, cur, eds, gallery); /* here before animating might be done checking and ajax requests for more images either circling like now */
+                } else if (it.is('li')) { //normal rotation
+                    hlpr.doclk(it, st, cur, gallery);
+                }
+            });
+        } 
     });
 });
