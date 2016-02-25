@@ -68,7 +68,7 @@ $(function galleryCoverflow() {
 
         if ( $(itemClass, gallery).length > 3 ) {
             var cur = gallery.find(itemClass).filter(":nth-child(2)");
-            cur.addClass(currentClass);
+            cur.addClass(_currentClass);
             var mga = gallery.attr('data-merrygoround') || 'on';
             $('[data-navigation]', gallery).click(function() { //catching prev next buttons
                 cur = $(currentClass, gallery);
