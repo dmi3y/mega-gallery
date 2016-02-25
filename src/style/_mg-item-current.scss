@@ -1,0 +1,31 @@
+/**
+ * Currently active item, with bits of inactive
+ */
+.mg-current {
+    left: $active-left;
+    right: $active-right;
+    z-index: 100;
+    top: $active-top;
+    
+    > * {
+        opacity: $active-opacity;
+    }
+
+    .mg-item-teaser {
+        display: block;
+    }
+
+    .mg-item-image {
+        width: $active-image-width;
+        height: $active-image-height;
+    }
+
+    + li {
+        z-index: 50;
+    }
+
+    ~ li {
+        right: $inactive-left-right;
+        left: $inactive-left-left;
+    }
+}

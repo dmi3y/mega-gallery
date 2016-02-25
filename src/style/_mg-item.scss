@@ -1,75 +1,42 @@
+/**
+ * Item, mainly inactive state
+ */
+
 .mg-item {
     position: absolute;
     z-index: 0;
-    top: 40px;
-    margin: 0 15px;
-    right: 551px;
-    left: 0;
-    background: #fff;
-    opacity: 0.4;
+    top: $inactive-top;
+    margin: $item-margin;
+    right: $inactive-right-right;
+    left: $inactive-right-left;
+    background: $item-background;
+
+    > * {
+        opacity: $inactive-opacity;
+    }
 
     .mg-item-image {
-        width: 377px;
-        height: 236px;
+        width: $inactive-image-width;
+        height: $inactive-image-height;
         overflow: hidden;
         text-align: center;
-        background: #E9E6E6;
     }
 
     .mg-item-teaser {
-        width: 290px;
-        padding: 5px 10px;
+        width: $teaser-width;
+        padding: $teaser-padding;
         display: none;
         position: absolute;
-        right: -260px;
-        top: 18px;
-        bottom: 18px;
-        background: #000;
-        background: rgba(0, 0, 0, 0.75);
+        right: $teaser-right;
+        top: $teaser-top;
+        bottom: $teaser-bottom;
+        background: $teaser-background;
         z-index: 10;
-        color: #fff;
+        color: $teaser-color;
 
     }
-        .mg-teaser-header {
-            display: block;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-        
-        .mg-item-text {
-            font-family: Georgia, serif;
-            font-size: 14px;
-            font-style: normal;
-            line-height: 20px;
-            text-transform: inherit;
-            margin: 3px 0;
-            border-top: 2px dotted #727272;
-            padding: 5px 0;
-        }
-}
-
-.mg-current {
-    left: 117px;
-    right: 350px;
-    z-index: 100;
-    top: 0;
-    opacity: 1;
-
-    .mg-item-teaser {
-        display: block;
-    }
-
-    .mg-item-image {
-        width: 465px;
-        height: 262px;
-    }
-
-    + li {
-        z-index: 50;
-    }
-
-    ~ li {
-        right: 0;
-        left: 551px;
+    .mg-item-text {
+        margin: $text-margin;
+        padding: $text-padding;
     }
 }

@@ -1,21 +1,27 @@
+$arrow-width: 40px;
+$arrow-color: #9e9e9e;
+
 .mg-navigate-left,
 .mg-navigate-right {
   position: absolute;
   top: 50%;
-  width: 31px;
-  height: 100px;
-  margin-top: -50px;
-  background-color: rgba(0, 0, 0, 0.5);
+  margin-top: -$arrow-width/2;
+  width: $arrow-width;
   z-index: 300;
+
+  svg {
+    width: $arrow-width;
+  }
 }
 
 .mg-navigate-left {
-  left: 0;
-  background: #000;
+  left: -20px;
+
+  svg g {
+    fill: $arrow-color;
+  }
 }
 
 .mg-navigate-right {
-  right: 0;
-  background: #000;
-  background-position: -5px -199px;
+  right: -15px;
 }
