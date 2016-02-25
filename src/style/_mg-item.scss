@@ -2,7 +2,6 @@
     position: absolute;
     z-index: 0;
     top: 40px;
-    font-size: 0;
     margin: 0 15px;
     right: 551px;
     left: 0;
@@ -28,6 +27,7 @@
         background: #000;
         background: rgba(0, 0, 0, 0.75);
         z-index: 10;
+        color: #fff;
 
     }
         .mg-teaser-header {
@@ -53,17 +53,11 @@
     right: 350px;
     z-index: 100;
     top: 0;
+    opacity: 1;
 
     .mg-item-image {
-        opacity: 1;
-        filter: alpha(opacity = 100);
         width: 465px;
         height: 310px;
-    }
-
-    .mg-item-teaser {
-        opacity: 1;
-        display: block;
     }
 
     + li {
@@ -74,5 +68,4 @@
         right: 0;
         left: 551px;
     }
-
 }
