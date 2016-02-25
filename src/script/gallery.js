@@ -65,8 +65,9 @@ $(function galleryCoverflow() {
     $(bodyClass).each(function() { //assume if there will be several galleries of this type on the page
         var gallery = $(this),
             it, st, cur, eds;
+            
         gallery.data('hlpr', hlpr);
-        if ($(itemClass, gallery).length <= 2) return; // temp solution 
+        if ($(itemClass, gallery).length < 3) return; // temp solution 
         var mga = gallery.attr('data-merrygoround') || 'on';
         $('[data-navigation]', gallery).click(function() { //catching prev next buttons
             if ($(movingClass, gallery).is('li')) return; //ban click on animation
