@@ -3,7 +3,13 @@
  *
  */
 
+$inner-height: 312px;
 @import "mg-body";
+
+$arrow-width: 40px;
+$arrow-color: #9e9e9e;
+$arrow-left: -15px;
+$arrow-right: -10px;
 @import "mg-navigation";
 
 $item-background: #fff;
