@@ -4,7 +4,7 @@ npm run compile-style
 npm run compile-tmpl
 npm run compile-script
 
-cp build/script.js script.js
+cat build/script.js gh-pages/script/* > script.js
 cat build/main.css gh-pages/style/* > main.css
 
 node scripts/build-gh-pages.js
