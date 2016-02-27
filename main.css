@@ -15,18 +15,29 @@
   top: 50%;
   margin-top: -20px;
   width: 40px;
-  z-index: 300; }
-  .mg-navigate-left svg,
-  .mg-navigate-right svg {
-    width: 40px; }
+  height: 40px;
+  z-index: 300;
+  cursor: pointer; }
+  .mg-navigate-left:after,
+  .mg-navigate-right:after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 0 solid #636363;
+    border-width: 6px 6px 0 0;
+    z-index: 400;
+    box-shadow: #fff 10px -10px 20px; }
 
 .mg-navigate-left {
-  left: -20px; }
-  .mg-navigate-left svg g {
-    fill: #9e9e9e; }
+  left: 15px;
+  transform: rotate(-135deg); }
 
 .mg-navigate-right {
-  right: -15px; }
+  right: 15px;
+  transform: rotate(45deg); }
 
 /**
  * Item, mainly inactive state
