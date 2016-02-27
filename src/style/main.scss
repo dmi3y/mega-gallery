@@ -3,47 +3,8 @@
  *
  */
 
-$inner-height: 312px;
 @import "mg-body";
-
-$arrow-width: 40px;
-$arrow-color: #9e9e9e;
-$arrow-left: -15px;
-$arrow-right: -10px;
 @import "mg-navigation";
-
-$item-background: #fff;
-$item-margin: 0 15px;
-
-$active-top: 0;
-$active-right: 350px;
-$active-left: 117px;
-
-$inactive-top: 40px;
-$inactive-right-right: 551px;
-$inactive-right-left: 0;
-$inactive-left-right: 0;
-$inactive-left-left: 551px;
-
-$active-image-width: 465px;
-$active-image-height: 262px;
-$inactive-image-width: 381px;
-$inactive-image-height: 236px;
-
-$inactive-opacity: 0.4;
-$active-opacity: 1;
-
-$teaser-width: 290px;
-$teaser-top: 18px;
-$teaser-right: -260px;
-$teaser-bottom: 18px;
-$teaser-background: rgba(0, 0, 0, 0.75);
-$teaser-padding: 5px 10px;
-$teaser-color: #fff;
-
-$text-margin: 3px 0;
-$text-padding: 5px 0;
 @import "mg-item";
 @import "mg-item-current";
-
 @import "mg-item-transition";

@@ -1,11 +1,9 @@
 /**
  * MG gallery main script
  */
-$(function galleryCoverflow() {
+$(function mgGallery() {
     var delay = 200; //animation delay
     var hm = {};
-    var hlpr;
-    var bodyClass = ".mg-body";
     var itemClass = ".mg-item";
     var imgClass = ".mg-item-image";
     var movingClass = ".mg-moving";
@@ -14,7 +12,7 @@ $(function galleryCoverflow() {
     var _currentClass = "mg-current";
     var teaserClass = ".mg-item-teaser";
 
-    hlpr = { //helper hash
+    var hlpr = { //helper hash
         init: function(cur, gallery) {
             cur.add(cur.prev('li')).add(cur.next('li')).each(function(ix) {
                 var li = $(this);
@@ -62,7 +60,7 @@ $(function galleryCoverflow() {
         }
     };
 
-    $(bodyClass).each(function() { //assume if there will be several galleries of this type on the page
+    $.fn.mgGallery = function() {
         var gallery = $(this),
             it, st, eds;
 
@@ -74,8 +72,9 @@ $(function galleryCoverflow() {
                 cur = $(currentClass, gallery);
                 if ($(movingClass, gallery).is('li')) return; //ban click on animation
                 eds = $(itemClass, gallery).filter(":first, :last");
-                gallery.data('initData') ? '' : hlpr.init(cur, gallery); //get the initial values from the CSS
-                switch (st = $(this).data('navigation')) {
+                gallery.data('initData') || hlpr.init(cur, gallery); //get the initial values from the CSS
+                var st = $(this).data('navigation');
+                switch (st) {
                     case 'l':
                         it = cur.prev();
                         break;
@@ -91,5 +90,5 @@ $(function galleryCoverflow() {
                 }
             });
         } 
-    });
+    };
 });

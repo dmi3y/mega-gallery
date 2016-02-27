@@ -1,25 +1,38 @@
+$arrow-size: 40px;
+$arrow-color: #636363;
+$arrow-width: 6px;
+$arrow-shadow: #fff 10px -10px 20px;
+$navigate-left: 15px;
+$navigate-right: 15px;
 
 .mg-navigate-left,
 .mg-navigate-right {
   position: absolute;
   top: 50%;
-  margin-top: -$arrow-width/2;
-  width: $arrow-width;
+  margin-top: -$arrow-size/2;
+  width: $arrow-size;
+  height: $arrow-size;
   z-index: 300;
+  cursor: pointer;
 
-  svg {
-    width: $arrow-width;
+  &:after {
+    content: " ";
+    position: absolute;
+    top: 0; right: 0;
+    bottom: 0; left: 0;
+    border: 0 solid $arrow-color;
+    border-width: $arrow-width $arrow-width 0 0;
+    z-index: 400;
+    box-shadow: $arrow-shadow;
   }
 }
 
 .mg-navigate-left {
-  left: $arrow-left;
-
-  svg g {
-    fill: $arrow-color;
-  }
+  left: $navigate-left;
+  transform: rotate(-135deg);
 }
 
 .mg-navigate-right {
-  right: $arrow-right;
+  right: $navigate-right;
+  transform: rotate(45deg);
 }
