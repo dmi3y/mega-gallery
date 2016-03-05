@@ -4,7 +4,6 @@
   "description": "Mega gallery for ladies and gentlemen",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "compile-tmpl": "handlebars -e hbs -c handlebars -p -f build/tmpl.js src/tmpl/*.hbs",
     "compile-style": "node-sass src/style/ -r -o build/",
     "compile-script": "cat src/script/*.js > build/script.js",
