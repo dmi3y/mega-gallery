@@ -4,10 +4,11 @@
  */
 .mg-body {
   position: relative; }
-  .mg-body .mg-inner {
-    position: relative;
-    height: 31.2em;
-    list-style: none; }
+
+.mg-inner {
+  position: relative;
+  height: 31.2em;
+  list-style: none; }
 
 .mg-navigate-left,
 .mg-navigate-right {
