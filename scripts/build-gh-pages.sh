@@ -10,5 +10,7 @@ cat build/main.css gh-pages/style/* > main.css
 node scripts/build-gh-pages.js
 
 # it's going to be deploy
-# git commit -am 'build gh pages'
+# git checkout gh-pages
+# git add index.html script.js main.css
+# git commit -m 'build gh pages'
 # git push -f
