@@ -4,7 +4,6 @@
 $(function mgGallery() {
     var delay = 200; //animation delay
     var hm = {};
-    var bodyClass = ".mg-body";
     var itemClass = ".mg-item";
     var imgClass = ".mg-item-image";
     var movingClass = ".mg-moving";

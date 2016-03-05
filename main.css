@@ -98,9 +98,21 @@
   .mg-moving > .mg-item-teaser,
   .mg-moving > .mg-item-image {
     opacity: 1; }
+body {
+	font-family: 'Playball', cursive;
+}
 
+header,
 main,
 footer {
 	margin: 0 auto;
 	width: 962px;	
+}
+
+header {
+	text-align: center;
+}
+
+h1 {
+	font-size: 2.5em;
 }
