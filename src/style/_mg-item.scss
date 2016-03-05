@@ -3,36 +3,39 @@
  */
  
 $item-background: #fff;
-$item-margin: 0 15px;
+$item-margin: 0 1.5em;
 
 $active-top: 0;
-$active-right: 350px;
-$active-left: 117px;
+$active-right: 35em;
+$active-left: 11.7em;
 
-$inactive-top: 40px;
-$inactive-right-right: 551px;
+$inactive-top: 4em;
+$inactive-right-right: 55.1em;
 $inactive-right-left: 0;
 $inactive-left-right: 0;
-$inactive-left-left: 551px;
+$inactive-left-left: 55.1em;
 
-$active-image-width: 465px;
-$active-image-height: 262px;
-$inactive-image-width: 381px;
-$inactive-image-height: 236px;
+$active-image-width: 46.5em;
+$active-image-height: 26.2em;
+$inactive-image-width: 38.1em;
+$inactive-image-height: 23.6em;
 
 $inactive-opacity: 0.4;
 $active-opacity: 1;
 
-$teaser-width: 290px;
-$teaser-top: 18px;
-$teaser-right: -260px;
-$teaser-bottom: 18px;
-$teaser-background: rgba(0, 0, 0, 0.75);
-$teaser-padding: 5px 10px;
-$teaser-color: #fff;
+$header-font-size: 2em;
 
-$text-margin: 3px 0;
-$text-padding: 5px 0;
+$teaser-width: 29em;
+$teaser-top: 1.8em;
+$teaser-right: -26em;
+$teaser-bottom: 1.8em;
+$teaser-background: rgba(0, 0, 0, 0.75);
+$teaser-padding: .5em 1em;
+$teaser-color: #fff;
+$teaser-font-size: 1.6em;
+
+$text-margin: .3em 0;
+$text-padding: .5em 0;
 
 .mg-item {
     position: absolute;
@@ -46,6 +49,8 @@ $text-padding: 5px 0;
     > * {
         opacity: $inactive-opacity;
     }
+
+}
 
     .mg-item-image {
         width: $inactive-image-width;
@@ -67,8 +72,11 @@ $text-padding: 5px 0;
         color: $teaser-color;
 
     }
+    .mg-item-header {
+        font-size: $header-font-size;
+    }
     .mg-item-text {
+        font-size: $teaser-font-size;
         margin: $text-margin;
         padding: $text-padding;
     }
-}
