@@ -52,28 +52,32 @@
   background: #fff; }
   .mg-item > * {
     opacity: 0.4; }
-  .mg-item .mg-item-image {
-    width: 38.1em;
-    height: 23.6em;
-    overflow: hidden;
-    text-align: center; }
-  .mg-item .mg-item-teaser {
-    width: 29em;
-    padding: 0.5em 1em;
-    display: none;
-    position: absolute;
-    right: -26em;
-    top: 1.8em;
-    bottom: 1.8em;
-    background: rgba(0, 0, 0, 0.75);
-    z-index: 10;
-    color: #fff; }
-  .mg-item .mg-item-header {
-    font-size: 2em; }
-  .mg-item .mg-item-text {
-    font-size: 1.6em;
-    margin: 0.3em 0;
-    padding: 0.5em 0; }
+
+.mg-item-image {
+  width: 38.1em;
+  height: 23.6em;
+  overflow: hidden;
+  text-align: center; }
+
+.mg-item-teaser {
+  width: 29em;
+  padding: 0.5em 1em;
+  display: none;
+  position: absolute;
+  right: -26em;
+  top: 1.8em;
+  bottom: 1.8em;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 10;
+  color: #fff; }
+
+.mg-item-header {
+  font-size: 2em; }
+
+.mg-item-text {
+  font-size: 1.6em;
+  margin: 0.3em 0;
+  padding: 0.5em 0; }
 
 /**
  * Currently active item, with bits of inactive
@@ -102,7 +106,7 @@
   .mg-moving > .mg-item-image {
     opacity: 1; }
 body {
-	font-size: 62.5%;
+	font-size: 72.5%;
 }
 
 
