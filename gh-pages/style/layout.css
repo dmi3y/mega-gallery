@@ -1,18 +1,24 @@
 body {
+	font-size: 62.5%;
+}
+
+
+header,
+.mg-item-header {
 	font-family: 'Playball', cursive;
 }
 
-header,
-main,
-footer {
-	margin: 0 auto;
-	width: 962px;	
+h1 {
+	font-size: 3.5em;
 }
 
 header {
 	text-align: center;
 }
 
-h1 {
-	font-size: 2.5em;
+header,
+main,
+footer {
+	margin: 0 auto;
+	width: 96.2em;
 }
