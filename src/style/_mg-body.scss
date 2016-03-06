@@ -1,6 +1,7 @@
-$inner-height: 31.2em;
 .mg-body {
     position: relative;
+    width: $body-width;
+    font-size: $body-font-size;
 }
     .mg-inner {
         position: relative;
