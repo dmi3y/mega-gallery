@@ -6,8 +6,7 @@
   "scripts": {
     "compile-tmpl": "handlebars -e hbs -c handlebars -p -f build/tmpl.js src/tmpl/*.hbs",
     "compile-style": "node-sass src/style/ -r -o build/",
-    "compile-script": "cat src/script/*.js > build/script.js",
-    "build-gh-pages": "scripts/build-gh-pages.sh"
+    "compile-script": "cat src/script/*.js > build/script.js"
   },
   "repository": {
     "type": "git",

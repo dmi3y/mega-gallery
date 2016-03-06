@@ -1,3 +1,0 @@
-$(function() {
-	$(".mg-body").mgGallery();
-});
