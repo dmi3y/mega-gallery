@@ -3,7 +3,9 @@
  *
  */
 .mg-body {
-  position: relative; }
+  position: relative;
+  width: 96.2em;
+  font-size: 10px; }
 
 .mg-inner {
   position: relative;
@@ -107,7 +109,7 @@
   .mg-moving > .mg-item-image {
     opacity: 1; }
 body {
-	font-size: 62.5%;
+	font-size: 72.5%;
 }
 
 
@@ -117,7 +119,7 @@ header,
 }
 
 h1 {
-	font-size: 3.5em;
+	font-size: 6.5em;
 }
 
 header {
