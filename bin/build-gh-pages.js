@@ -4,21 +4,20 @@
  * Generates GitHub Pages content
  */
 
-"use strict";
+'use strict'
 
-var fs = require("fs");
-var cwd = process.cwd();
+var fs = require('fs')
+var cwd = process.cwd()
 
-var Handlebars = require("handlebars");
-require(cwd + "/build/tmpl.js");
+var Handlebars = require('handlebars')
+require(cwd + '/build/tmpl.js')
 
-var indexBlob = fs.readFileSync(cwd + "/gh-src/tmpl/index.hbs");
-var dataBlob  = fs.readFileSync(cwd + "/gh-src/data/gallery.json");
-var dataJSON = JSON.parse(dataBlob);
-var indexStr = indexBlob.toString();
-var indexTmpl = Handlebars.compile(indexStr);
+var indexBlob = fs.readFileSync(cwd + '/gh-src/tmpl/index.hbs')
+var dataBlob = fs.readFileSync(cwd + '/gh-src/data/gallery.json')
+var dataJSON = JSON.parse(dataBlob)
+var indexStr = indexBlob.toString()
+var indexTmpl = Handlebars.compile(indexStr)
 
-var indexHtml = indexTmpl(dataJSON);
+var indexHtml = indexTmpl(dataJSON)
 
-fs.writeFileSync(cwd + "/index.html", indexHtml);
-
+fs.writeFileSync(cwd + '/index.html', indexHtml)

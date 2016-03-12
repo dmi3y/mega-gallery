@@ -14,4 +14,3 @@ bin/build-gh-pages.js
 # git add index.html script.js main.css
 # git commit -m 'build gh pages'
 # git push -f
-
