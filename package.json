@@ -4,8 +4,8 @@
   "description": "Mega gallery for ladies and gentlemen",
   "main": "index.js",
   "scripts": {
-    "compile-tmpls": "handlebars -e hbs -c handlebars -p -f build/tmpls.js src/tmpls/*.hbs",
-    "watch-tmpls": "sane 'npm run compile-tmpls' --glob=src/tmpls/**/*.hbs",
+    "compile-templates": "handlebars -e hbs -c handlebars -p -f build/templates.js src/templates/*.hbs",
+    "watch-templates": "sane 'npm run compile-templates' --glob=src/templates/**/*.hbs",
     "compile-styles": "node-sass src/styles/ -r -o build/",
     "watch-styles": "node-sass -w src/styles/ -r -o -q build/",
     "compile-scripts": "cat src/scripts/*.js > build/mega-gallery.js"
