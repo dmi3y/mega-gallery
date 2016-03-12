@@ -4,9 +4,11 @@
   "description": "Mega gallery for ladies and gentlemen",
   "main": "index.js",
   "scripts": {
-    "compile-tmpl": "handlebars -e hbs -c handlebars -p -f build/tmpl.js src/tmpl/*.hbs",
-    "compile-style": "node-sass src/style/ -r -o build/",
-    "compile-script": "cat src/script/*.js > build/script.js"
+    "compile-tmpls": "handlebars -e hbs -c handlebars -p -f build/tmpls.js src/tmpls/*.hbs",
+    "watch-tmpls": "sane 'npm run compile-tmpls' --glob=src/tmpls/**/*.hbs",
+    "compile-styles": "node-sass src/styles/ -r -o build/",
+    "watch-styles": "node-sass -w src/styles/ -r -o -q build/",
+    "compile-scripts": "cat src/scripts/*.js > build/mega-gallery.js"
   },
   "repository": {
     "type": "git",
@@ -25,6 +27,7 @@
   "homepage": "https://github.com/dmi3y/mega-gallery#readme",
   "devDependencies": {
     "handlebars": "^4.0.5",
-    "node-sass": "^3.4.2"
+    "node-sass": "^3.4.2",
+    "sane": "1.3.3"
   }
 }
