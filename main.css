@@ -2,14 +2,21 @@
  * Settings and imports
  *
  */
+/*
+ * Helpers
+ */
+/*
+ * Converters etc.
+ */
 .mg-body {
   position: relative;
-  width: 962px;
+  margin: 0 auto;
+  width: 96.2em;
   font-size: 10px; }
 
 .mg-inner {
   position: relative;
-  height: 31.2em;
+  height: 27.6em;
   list-style: none; }
 
 .mg-navigate-left,
@@ -95,8 +102,8 @@
   .mg-current .mg-item-teaser {
     display: block; }
   .mg-current .mg-item-image {
-    width: 46.5em;
-    height: 26.2em; }
+    width: 54em;
+    height: 30.4em; }
   .mg-current + li {
     z-index: 50; }
   .mg-current ~ li {
