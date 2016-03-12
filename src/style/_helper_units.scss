@@ -3,5 +3,5 @@
  */
 
 @function em($px) {
-	@return {($px/$gallery-font-size)}em;
+	@return $px/$gallery-font-size * 1em;
 }

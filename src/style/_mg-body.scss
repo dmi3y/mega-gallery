@@ -1,7 +1,8 @@
 .mg-body {
     position: relative;
-    width: $body-width;
-    font-size: $body-font-size;
+    margin: 0 auto;
+    width: $gallery-body-width;
+    font-size: $gallery-font-size;
 }
     .mg-inner {
         position: relative;
