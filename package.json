@@ -8,7 +8,8 @@
     "watch-templates": "sane 'npm run compile-templates' --glob=src/templates/**/*.hbs",
     "compile-styles": "node-sass src/styles/ -r -o build/",
     "watch-styles": "node-sass -w src/styles/ -r -o -q build/",
-    "compile-scripts": "cat src/scripts/*.js > build/mega-gallery.js"
+    "compile-scripts": "cat src/scripts/*.js > build/index.js",
+    "watch-scripts": "sane 'npm run compile-scripts' --glob=src/scripts/**/*.hbs"
   },
   "repository": {
     "type": "git",
