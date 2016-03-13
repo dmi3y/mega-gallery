@@ -1,0 +1,117 @@
+/**
+ * Settings and imports
+ *
+ */
+/*
+ * Helpers
+ */
+/*
+ * Converters etc.
+ */
+.mg-body {
+  position: relative;
+  margin: 0 auto;
+  width: 96.2em;
+  font-size: 10px; }
+
+.mg-inner {
+  position: relative;
+  height: 30.4em;
+  list-style: none; }
+
+.mg-navigate-left,
+.mg-navigate-right {
+  position: absolute;
+  top: 50%;
+  margin-top: -2em;
+  width: 4em;
+  height: 4em;
+  z-index: 300;
+  cursor: pointer; }
+  .mg-navigate-left:after,
+  .mg-navigate-right:after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 0 solid #636363;
+    border-width: 0.6em 0.6em 0 0;
+    z-index: 400;
+    box-shadow: #fff 1em -1em 2em; }
+
+.mg-navigate-left {
+  left: 1.5em;
+  transform: rotate(-135deg); }
+
+.mg-navigate-right {
+  right: 1.5em;
+  transform: rotate(45deg); }
+
+/**
+ * Item, mainly inactive state
+ */
+.mg-item {
+  position: absolute;
+  z-index: 0;
+  top: 3.4em;
+  margin: 0 1.5em;
+  right: 55.1em;
+  left: 0;
+  background: #fff; }
+  .mg-item > * {
+    opacity: 0.4; }
+
+.mg-item-image {
+  width: 38.1em;
+  height: 23.6em;
+  overflow: hidden;
+  text-align: center; }
+
+.mg-item-teaser {
+  width: 29em;
+  padding: 0.5em 1em;
+  display: none;
+  position: absolute;
+  right: -26em;
+  top: 1.8em;
+  bottom: 1.8em;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 10;
+  color: #fff; }
+
+.mg-item-header {
+  font-size: 2em; }
+
+.mg-item-text {
+  font-size: 1.6em;
+  margin: 0.3em 0;
+  padding: 0.5em 0; }
+
+/**
+ * Currently active item, with bits of inactive
+ */
+.mg-current {
+  left: 11.7em;
+  right: 35em;
+  z-index: 100;
+  top: 0; }
+  .mg-current > * {
+    opacity: 1; }
+  .mg-current .mg-item-teaser {
+    display: block; }
+  .mg-current .mg-item-image {
+    width: 54em;
+    height: 30.4em; }
+  .mg-current + li {
+    z-index: 50; }
+  .mg-current ~ li {
+    right: 0;
+    left: 55.1em; }
+
+.mg-moving {
+  z-index: 200; }
+  .mg-moving > .mg-item-teaser,
+  .mg-moving > .mg-item-image {
+    opacity: 1; }
