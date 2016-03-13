@@ -13,7 +13,7 @@ $gallery-font-size: 10px;
 // Navigation Arrows
 $arrow-size: 4em;
 $arrow-color: #636363;
-$arrow-width: .6em;
+$arrow-width: 0.6em;
 $arrow-shadow: #fff 1em -1em 2em;
 $navigate-left: 1.5em;
 $navigate-right: 1.5em;
@@ -30,7 +30,6 @@ $active-image-width: em($image-width);
 $active-image-height: em($image-height);
 $inactive-opacity: 0.4;
 
-$inactive-top: 4em;
 $inactive-right-right: 55.1em;
 $inactive-right-left: 0;
 $inactive-left-right: 0;
@@ -38,6 +37,7 @@ $inactive-left-left: 55.1em;
 
 $inactive-image-width: 38.1em;
 $inactive-image-height: 23.6em;
+$inactive-top: ($active-image-height - $inactive-image-height) / 2;
 
 // Teaser
 $header-font-size: 2em;
@@ -47,17 +47,13 @@ $teaser-top: 1.8em;
 $teaser-right: -26em;
 $teaser-bottom: 1.8em;
 $teaser-background: rgba(0, 0, 0, 0.75);
-$teaser-padding: .5em 1em;
+$teaser-padding: 0.5em 1em;
 $teaser-color: #fff;
 $teaser-font-size: 1.6em;
 
-$text-margin: .3em 0;
-$text-padding: .5em 0;
+$text-margin: 0.3em 0;
+$text-padding: 0.5em 0;
 
 // Gallery itself
 $gallery-body-width: em($gallery-width);
-$inactive-height: $inactive-image-height + $inactive-top;
-$active-height: em($image-height);
-$is-overlaps: $inactive-height > $active-height;
-// pick whichever height is bigger
-$inner-height: if(is-overlaps, $inactive-height, $active-height);
+$inner-height: $active-image-height;
