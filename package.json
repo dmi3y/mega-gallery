@@ -4,12 +4,12 @@
   "description": "Mega gallery for ladies and gentlemen",
   "main": "index.js",
   "scripts": {
-    "compile-templates": "handlebars -e hbs -c handlebars -p -f build/templates.js src/templates/*.hbs",
+    "compile-templates": "mkdir -p build/templates && handlebars -e hbs -c handlebars -p -f build/templates/common.js src/templates/*.hbs",
     "watch-templates": "sane 'npm run compile-templates' --glob=src/templates/**/*.hbs",
     "compile-styles": "node-sass src/styles/ -r -o build/",
-    "watch-styles": "node-sass -w src/styles/ -r -o -q build/",
+    "watch-styles": "node-sass -w src/styles/ -r -o build/",
     "compile-scripts": "cat src/scripts/*.js > build/index.js",
-    "watch-scripts": "sane 'npm run compile-scripts' --glob=src/scripts/**/*.hbs"
+    "watch-scripts": "sane 'npm run compile-scripts' --glob=src/scripts/*.js"
   },
   "repository": {
     "type": "git",
