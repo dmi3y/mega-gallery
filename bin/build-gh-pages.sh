@@ -5,7 +5,7 @@ npm run compile-templates
 npm run compile-scripts
 
 cat build/mega-gallery.js gh-src/scripts/* > index.js
-cat build/main.css gh-src/styles/* > main.css
+cat build/main.css gh-src/styles/* > index.css
 
 bin/build-gh-pages.js
 
