@@ -115,3 +115,30 @@
   .mg-moving > .mg-item-teaser,
   .mg-moving > .mg-item-image {
     opacity: 1; }
+<<<<<<< 8f825f37550602654f69064d211aae0749a56404
+=======
+body {
+	font-size: 62.5%;
+}
+
+
+header,
+.mg-item-header {
+	font-family: 'Playball', cursive;
+}
+
+h1 {
+	font-size: 6.5em;
+}
+
+header {
+	text-align: center;
+}
+
+header,
+main,
+footer {
+	margin: 0 auto;
+	width: 96.2em;
+}
+>>>>>>> new build
