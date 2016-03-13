@@ -4,10 +4,10 @@ npm run compile-styles
 npm run compile-templates
 npm run compile-scripts
 
-cat build/mega-gallery.js gh-src/scripts/* > index.js
-cat build/main.css gh-src/styles/* > index.css
+cat build/*.js gh-src/scripts/* > index.js
+cat build/*.css gh-src/styles/* > index.css
 
-bin/build-gh-pages.js
+node bin/build-gh-pages.js
 
 # it's going to be deploy
 # git checkout gh-pages

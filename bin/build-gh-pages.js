@@ -10,7 +10,7 @@ var fs = require('fs')
 var cwd = process.cwd()
 
 var Handlebars = require('handlebars')
-require(cwd + '/build/templates.js')
+require(cwd + '/build/templates/common.js')
 
 var indexBlob = fs.readFileSync(cwd + '/gh-src/templates/index.hbs')
 var dataBlob = fs.readFileSync(cwd + '/gh-src/data/gallery.json')
