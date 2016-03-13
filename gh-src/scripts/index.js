@@ -1,3 +1,5 @@
-$(function() {
-	$(".mg-body").mgGallery();
-});
+/* global $ */
+
+$(function () {
+  $('.mg-body').mgGallery()
+})
