@@ -1,11 +1,11 @@
 #!/usr/bin/env bash -x
 
-npm run compile-style
-npm run compile-tmpl
-npm run compile-script
+npm run compile-styles
+npm run compile-templates
+npm run compile-scripts
 
-cat build/script.js gh-src/script/* > script.js
-cat build/main.css gh-src/style/* > main.css
+cat build/mega-gallery.js gh-src/scripts/* > index.js
+cat build/main.css gh-src/styles/* > main.css
 
 bin/build-gh-pages.js
 

@@ -10,9 +10,9 @@ var fs = require('fs')
 var cwd = process.cwd()
 
 var Handlebars = require('handlebars')
-require(cwd + '/build/tmpl.js')
+require(cwd + '/build/templates.js')
 
-var indexBlob = fs.readFileSync(cwd + '/gh-src/tmpl/index.hbs')
+var indexBlob = fs.readFileSync(cwd + '/gh-src/templates/index.hbs')
 var dataBlob = fs.readFileSync(cwd + '/gh-src/data/gallery.json')
 var dataJSON = JSON.parse(dataBlob)
 var indexStr = indexBlob.toString()
