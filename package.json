@@ -14,8 +14,8 @@
     "compile-scripts": "./tasks/compile-scripts.sh",
     "watch-scripts": "sane 'npm run compile-scripts' --glob=src/scripts/*.js",
     "build": "npm run compile-templates & npm run compile-styles & npm run compile-scripts",
-    "build-gh-pages": "bin/build-gh-pages.sh",
-    "develop-gh-pages": "npm run build-gh-pages && bin/develop-gh-pages.sh"
+    "build-gh-pages": "tasks/build-gh-pages.sh",
+    "develop-gh-pages": "npm run build-gh-pages && tasks/develop-gh-pages.sh"
   },
   "repository": {
     "type": "git",
