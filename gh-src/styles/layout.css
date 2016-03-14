@@ -1,24 +1,44 @@
 body {
 	font-size: 62.5%;
+	font-style: oblique;
 }
 
-
-header,
+h1,
+h2,
 .mg-item-header {
 	font-family: 'Playball', cursive;
 }
 
 h1 {
-	font-size: 6.5em;
+	font-size: 4.3em;
 }
-
-header {
-	text-align: center;
+h2 {
+	font-size: 1.5em;
 }
 
 header,
-main,
-footer {
+h2 {
+	text-align: center;
+}
+
+.wrapper {
 	margin: 0 auto;
 	width: 96.2em;
 }
+
+header,
+main{
+	font-size: 2.0em;
+}
+	.info {
+		padding: 3.0em 0.5em 0;
+	}
+
+footer {
+	font-size: 1.5em;
+	color: #838383;
+	margin: 5.0em 0 0;
+}
+	footer a {
+		color: #838383;
+	}

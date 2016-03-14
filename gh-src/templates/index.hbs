@@ -8,11 +8,23 @@
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
 </head>
 <body>
-	<header><h1>Mega Gallery</h1></header>
-	<main>
-		{{> mg-body}}
-	</main>
-	<footer></footer>
+	<div class="wrapper">
+		<header>
+			<h1>Mega Gallery</h1>
+		</header>
+		<main>
+			<section>
+				<h2>This is San Francisco</h2>
+				{{> mg-body}}
+			</section>
+			<div class="info">
+				Like it on <a href="https://github.com/dmi3y/mega-gallery">GitHub</a>
+			</div>
+		</main>
+		<footer>
+			Made by: <a href="mailto:lapshukov@gmail.com">Dmitrii Lapshukov</a>
+		</footer>
+	</div>
 	<script type="text/javascript" src="index.js"></script>
 	<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
