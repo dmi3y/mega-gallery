@@ -4,7 +4,7 @@
   "description": "Mega gallery for ladies and gentlemen",
   "main": "index.js",
   "scripts": {
-    "compile-templates": "mkdir -p build/templates && handlebars -e hbs -c handlebars -p -f build/templates/common.js src/templates/*.hbs",
+    "compile-templates": "tasks/compile-templates.sh",
     "watch-templates": "sane 'npm run compile-templates' --glob=src/templates/**/*.hbs",
     "compile-styles": "node-sass src/styles/ -r -o build/",
     "watch-styles": "node-sass -w src/styles/ -r -o build/",
