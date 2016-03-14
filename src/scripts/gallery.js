@@ -4,6 +4,7 @@
  */
 
 /* global $ */
+// This, oh my dog... needs refactoring...
 $(function mgGallery () {
   var delay = 200 // animation delay
   var hm = {}
@@ -14,7 +15,6 @@ $(function mgGallery () {
   var currentClass = '.mg-current'
   var _currentClass = 'mg-current'
   var teaserClass = '.mg-item-teaser'
-  // This god needs refactoring...
   var hlpr = { // helper hash
     init: function (cur, gallery) {
       cur.add(cur.prev('li')).add(cur.next('li')).each(function (ix) {
