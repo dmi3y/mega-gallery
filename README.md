@@ -8,4 +8,4 @@ Flip like gallery that uses jQuery, SASS preprocessor and Handlebars templates u
 
 ## Like it?
 
-Make [me](http://www.amazon.com/gp/registry/wishlist/21E66K8CCFMBD/ref=cm_wl_huc_view) smile.
+Thank [me](http://www.amazon.com/gp/registry/wishlist/21E66K8CCFMBD/ref=cm_wl_huc_view).
