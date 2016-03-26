@@ -91,23 +91,23 @@
   line-height: 1.5; }
 
 /**
- * Currently active item, with bits of inactive
+ * Currently active item
  */
-.mg-current {
+.mg-item:nth-child(2) {
   left: 11.7em;
   right: 35em;
   z-index: 100;
   top: 0; }
-  .mg-current > * {
+  .mg-item:nth-child(2) > * {
     opacity: 1; }
-  .mg-current .mg-item-teaser {
+  .mg-item:nth-child(2) .mg-item-teaser {
     display: block; }
-  .mg-current .mg-item-image {
+  .mg-item:nth-child(2) .mg-item-image {
     width: 54em;
     height: 30.4em; }
-  .mg-current + li {
+  .mg-item:nth-child(2) + li {
     z-index: 50; }
-  .mg-current ~ li {
+  .mg-item:nth-child(2) ~ li {
     right: 0;
     left: 55.1em; }
 
