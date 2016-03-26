@@ -1,12 +1,12 @@
 /**
- * Currently active item, with bits of inactive
+ * Currently active item
  */
-.mg-current {
+.mg-item:nth-child(2) {
     left: $active-left;
     right: $active-right;
     z-index: 100;
     top: $active-top;
-    
+
     > * {
         opacity: 1;
     }
