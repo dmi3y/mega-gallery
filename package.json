@@ -6,8 +6,8 @@
   "scripts": {
     "compile-templates": "tasks/compile-templates.sh",
     "watch-templates": "sane 'npm run compile-templates' --glob=src/templates/**/*.hbs",
-    "compile-styles": "node-sass src/styles/ -r -o build/",
-    "watch-styles": "node-sass -w src/styles/ -r -o build/",
+    "compile-styles": "tasks/compile-styles.sh",
+    "watch-styles": "npm run compile-styles -- -w",
     "compile-scripts": "cat src/scripts/*.js > build/index.js",
     "watch-scripts": "sane 'npm run compile-scripts' --glob=src/scripts/*.js"
   },
@@ -27,8 +27,10 @@
   },
   "homepage": "https://github.com/dmi3y/mega-gallery#readme",
   "devDependencies": {
+    "autoprefixer": "6.3.4",
     "handlebars": "^4.0.5",
     "node-sass": "^3.4.2",
+    "postcss-cli": "2.5.1",
     "sane": "1.3.3"
   },
   "dependencies": {}
