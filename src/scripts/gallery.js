@@ -6,7 +6,8 @@
 /* global $ */
 // This, oh my dog... needs refactoring...
 $(function mgGallery () {
-  var delay = 200 // animation delay
+  // animation delay
+  var delay = 200
   var hm = {}
   var itemClass = '.mg-item'
   var imgClass = '.mg-item-image'
@@ -15,6 +16,7 @@ $(function mgGallery () {
   var currentClass = '.mg-current'
   var _currentClass = 'mg-current'
   var teaserClass = '.mg-item-teaser'
+
   var hlpr = { // helper hash
     init: function (cur, gallery) {
       cur.add(cur.prev('li')).add(cur.next('li')).each(function (ix) {
@@ -48,12 +50,15 @@ $(function mgGallery () {
     },
     doclk: function (it, st, cur, gallery) {
       var wro = gallery.data('initData')
-      this.anim(it, wro.d) // move new item to center (default position) and make current
-      this.anim(cur, wro[st]) // move current to its new position
+      // move new item to center (default position) and make current
+      this.anim(it, wro.d)
+      // move current to its new position
+      this.anim(cur, wro[st])
       gallery.trigger('galleryslide', st) // hook for helpers
     },
     cirle: function (it, st, cur, eds, gallery) {
-      var mi = $(st === 'r' ? eds[0] : eds[1]).removeAttr('style') // reassign things so it looks like circle
+      // reassign things so it looks like circle
+      var mi = $(st === 'r' ? eds[0] : eds[1]).removeAttr('style')
       if (st === 'r') {
         it.after(mi)
       } else {
@@ -71,11 +76,17 @@ $(function mgGallery () {
       var cur = gallery.find(itemClass).filter(':nth-child(2)')
       cur.addClass(_currentClass)
       var mga = gallery.attr('data-merrygoround') || 'on'
-      $('[data-navigation]', gallery).click(function () { // catching prev next buttons
+
+      // catching prev next buttons
+      $('[data-navigation]', gallery).click(function () {
         cur = $(currentClass, gallery)
-        if ($(movingClass, gallery).is('li')) return // ban click on animation
+
+        // ban click on animation
+        if ($(movingClass, gallery).is('li')) return
         eds = $(itemClass, gallery).filter(':first, :last')
-        gallery.data('initData') || hlpr.init(cur, gallery) // get the initial values from the CSS
+
+        // get the initial values from the CSS
+        gallery.data('initData') || hlpr.init(cur, gallery)
         var st = $(this).data('navigation')
         switch (st) {
           case 'l':
@@ -85,10 +96,17 @@ $(function mgGallery () {
             it = cur.next()
             break
         }
-        if (it.is(eds)) gallery.trigger('beforegalleryslideend', st) // hook for helpers @REV question for optimization
-        if (it.is(eds) && mga === 'on') { // last items hook and check for merrygoround functionality
-          hlpr.cirle(it, st, cur, eds, gallery) /* here before animating might be done checking and ajax requests for more images either circling like now */
-        } else if (it.is('li')) { // normal rotation
+
+        // hook for helpers @REV question for optimization
+        if (it.is(eds)) gallery.trigger('beforegalleryslideend', st)
+
+        // last items hook and check for merrygoround functionality
+        if (it.is(eds) && mga === 'on') {
+          // here before animating might be done checking and ajax requests
+          // + for more images either circling like now
+          hlpr.cirle(it, st, cur, eds, gallery)
+        } else if (it.is('li')) {
+          // normal rotation
           hlpr.doclk(it, st, cur, gallery)
         }
       })
