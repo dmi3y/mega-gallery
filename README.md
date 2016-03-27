@@ -8,4 +8,9 @@ Flip like gallery that uses jQuery, SASS preprocessor and Handlebars templates u
 
 ## Like it?
 
-Thank me. Here is [whishlist](http://www.amazon.com/gp/registry/wishlist/21E66K8CCFMBD/ref=cm_wl_huc_view).
+You have chance to encourage development. Here is [whishlist](http://www.amazon.com/gp/registry/wishlist/21E66K8CCFMBD/ref=cm_wl_huc_view).
+
+## Changelog
+
+### v1.0.0
+Initial bump up. Old cold cleanup.
