@@ -33,10 +33,11 @@ $inactive-image-width: 38.1em;
 $inactive-image-height: 23.6em;
 $inactive-top: ($active-image-height - $inactive-image-height) / 2;
 
-$inactive-right-right: 55.1em;
-$inactive-right-left: 0;
-$inactive-left-right: 0;
-$inactive-left-left: em($gallery-width) - $inactive-image-width;
+$inactive-width: em($gallery-width) - $inactive-image-width
+$inactive-left-right: $inactive-width;
+$inactive-left-left: 0;
+$inactive-right-right: 0;
+$inactive-right-left: $inactive-width;
 
 
 // Teaser

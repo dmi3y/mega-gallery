@@ -8,8 +8,8 @@
     z-index: 0;
     margin: 0;
     top: $inactive-top;
-    right: $inactive-right-right;
-    left: $inactive-right-left;
+    right: $inactive-left-right;
+    left: $inactive-left-left;
     background: $item-background;
 
     > * {
