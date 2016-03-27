@@ -12,5 +12,8 @@ You have chance to encourage development. Here is [whishlist](http://www.amazon.
 
 ## Changelog
 
+### v2.0.0
+Moving towards CSS animations. Script cleanups.
+
 ### v1.0.0
 Initial bump up. Old cold cleanup.
