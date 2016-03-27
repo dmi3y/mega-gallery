@@ -8,7 +8,10 @@ $(function mgGallery () {
     navigation.click(function (ev) {
       var dir = this.dataset.navigation
       var firstChild = inner.find('li:first-child')
-      inner.find('li:last-child')[dir](firstChild)
+      var lastChild = inner.find('li:last-child')
+
+      if (dir === 'left') lastChild.before(firstChild)
+      else if (dir === 'right') firstChild.after(lastChild)
     })
   }
 })
