@@ -2,12 +2,12 @@
  * Item, mainly inactive state
  */
 
- 
+
 .mg-item {
     position: absolute;
     z-index: 0;
+    margin: 0;
     top: $inactive-top;
-    margin: $item-margin;
     right: $inactive-right-right;
     left: $inactive-right-left;
     background: $item-background;
@@ -28,7 +28,7 @@
     .mg-item-teaser {
         width: $teaser-width;
         padding: $teaser-padding;
-        display: none;
+        transform: rotateY(90deg);
         position: absolute;
         right: $teaser-right;
         top: $teaser-top;
