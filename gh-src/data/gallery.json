@@ -1,25 +1,35 @@
 {
 	"items": [
-		{
-			"teaser": {
-				"header": "Ferry Building. Here you go!",
-				"text": "This is where you see \"Port of San Francisco\" sign; and, as you expect, ferries. Regular place for farmer's market where you can get delicious fruils and vegetables."
-			},
-			"image": {
-				"src": "https://lh3.googleusercontent.com/Iv9HqEw8dCOgD-8CtTFohr0OGNFVdkyRt-hwOrFf0CuVtaptpVGNtG6Q0-wxtJcojG_tcKWDKzQhbXRB0UngyXCW5Th3KvTds9K-ZCUMYtTgc4mjCC0iHnwlaNE_n3nyx4NMggoz2SowCJHN5xyZveslXtWFfEKituMteLOMdYOU7D69m-60RNvMs1zShLALmI0wFuXhLdLU2IG3N4_qF6pW3BFkgUbpfN5y5rqYYenyNVaSxwC43rS5qtJZmY5b1tJhBBUVluSfhzmGWngk9qBJiJjpSVp_2PJgYXwSde0N3N6fiLZ37FROXntEHsY4IaRFdZya1JKPUzcG5GSXgJOEC3JXfyhP1tnCPXK45LOrQvI35zdUBN9E_YXrGbno8T0l3JeWDyJVANgeeb1qjqyExVxZO4wniKd4hRg-iLsJsCleY3QxcAEczkTHm_YnJGGjWDr140yQrQ0UZM7of2VuBcEIW9OWt3J6V0CEqYgWPGboX6xzR7uJ473v6Kwf9FnObRJNBsF0dng-WILqHSlOQwEUDIPgR-tcUzHcqUerePhtoQj4tZr07OHnZ9p36zKt4A=w540-h304-no",
-				"alt": "San Francisco Ferry Building."
-			}
-		},
-		{
-			"teaser": {
-				"header": "Marina.",
-				"text": "South Beach marina next to the AT&T Park stadium. Relaxing place for soul and mind with stunning view of the San Francisco Bay."
-			},
-			"image": {
-				"src": "https://lh3.googleusercontent.com/9We5vcPtSSJdu8DOZ4IqE8hVmd5OaLDQ1FmVWms2HJ16cqf0WtPDLEWuxki11vtapjhI2oArIp7HzMo-hF91z40SYr3ks5OiIQaQdD97BxIhqOzAGzGEH_epV61z21J0zu4cRNhmkEsXP2xaI1tLi9FChHCGFD0APK4L4FdGTVRKQoUo6YeYJAzoiEM9hycZmLi4CYJiKc2ipBNrutzGAm6W0EijrN2Ljkqdj0V_neZBW0PQt9UstbL3EU13oq3kAaDZj-aYqGjpAE-PQuUnSN__F8_Y8sSa1mopKB2GwFLSugKu45PcEJeZNwrH98FY6buEw3fnXT9m0wcd9bskshlI_R0eSxAxiB1Nv8xDQUKLZ8XICDcoxEYxRsiUmYr4vxMIvvW76m9A9Tf2SO73Fomfc8zEwQ3XdE3QsTWPPoFcIz7G7qy-T4TmRe6VTRWcAzt2POTxNucQ5RbmZkw1f-3s7ISYOHOfhVZv4ZFvcSbtKNab-S9DsVbyP3Cck97W2q_38u017Ol8gUklqVukWd8dVQsoLnugZHzPOTkADz6tDo6cqiMrAABiiHnB6e_5wpU0pQ=w540-h304-no",
-				"alt": "South Beach Marina."
-			}
-		},
+    {
+      "teaser": {
+        "header": "Ferry Building. Here you go!",
+        "text": "This is where you see \"Port of San Francisco\" sign; and, as you expect, ferries. Regular place for farmer's market where you can get delicious fruils and vegetables."
+      },
+      "image": {
+        "src": "https://lh3.googleusercontent.com/Iv9HqEw8dCOgD-8CtTFohr0OGNFVdkyRt-hwOrFf0CuVtaptpVGNtG6Q0-wxtJcojG_tcKWDKzQhbXRB0UngyXCW5Th3KvTds9K-ZCUMYtTgc4mjCC0iHnwlaNE_n3nyx4NMggoz2SowCJHN5xyZveslXtWFfEKituMteLOMdYOU7D69m-60RNvMs1zShLALmI0wFuXhLdLU2IG3N4_qF6pW3BFkgUbpfN5y5rqYYenyNVaSxwC43rS5qtJZmY5b1tJhBBUVluSfhzmGWngk9qBJiJjpSVp_2PJgYXwSde0N3N6fiLZ37FROXntEHsY4IaRFdZya1JKPUzcG5GSXgJOEC3JXfyhP1tnCPXK45LOrQvI35zdUBN9E_YXrGbno8T0l3JeWDyJVANgeeb1qjqyExVxZO4wniKd4hRg-iLsJsCleY3QxcAEczkTHm_YnJGGjWDr140yQrQ0UZM7of2VuBcEIW9OWt3J6V0CEqYgWPGboX6xzR7uJ473v6Kwf9FnObRJNBsF0dng-WILqHSlOQwEUDIPgR-tcUzHcqUerePhtoQj4tZr07OHnZ9p36zKt4A=w540-h304-no",
+        "alt": "San Francisco Ferry Building."
+      }
+    },
+    {
+      "teaser": {
+        "header": "Marina.",
+        "text": "South Beach marina next to the AT&T Park stadium. Relaxing place for soul and mind with stunning view of the San Francisco Bay."
+      },
+      "image": {
+        "src": "https://lh3.googleusercontent.com/9We5vcPtSSJdu8DOZ4IqE8hVmd5OaLDQ1FmVWms2HJ16cqf0WtPDLEWuxki11vtapjhI2oArIp7HzMo-hF91z40SYr3ks5OiIQaQdD97BxIhqOzAGzGEH_epV61z21J0zu4cRNhmkEsXP2xaI1tLi9FChHCGFD0APK4L4FdGTVRKQoUo6YeYJAzoiEM9hycZmLi4CYJiKc2ipBNrutzGAm6W0EijrN2Ljkqdj0V_neZBW0PQt9UstbL3EU13oq3kAaDZj-aYqGjpAE-PQuUnSN__F8_Y8sSa1mopKB2GwFLSugKu45PcEJeZNwrH98FY6buEw3fnXT9m0wcd9bskshlI_R0eSxAxiB1Nv8xDQUKLZ8XICDcoxEYxRsiUmYr4vxMIvvW76m9A9Tf2SO73Fomfc8zEwQ3XdE3QsTWPPoFcIz7G7qy-T4TmRe6VTRWcAzt2POTxNucQ5RbmZkw1f-3s7ISYOHOfhVZv4ZFvcSbtKNab-S9DsVbyP3Cck97W2q_38u017Ol8gUklqVukWd8dVQsoLnugZHzPOTkADz6tDo6cqiMrAABiiHnB6e_5wpU0pQ=w540-h304-no",
+        "alt": "South Beach Marina."
+      }
+    },
+    {
+      "teaser": {
+        "header": "Golden Gate Bridge",
+        "text": "Very destinctive red color bridge, which is San Francisco sign landmark. Do not mix it up with Bay Bridge."
+      },
+      "image": {
+        "src": "https://lh3.googleusercontent.com/pa5suoE2vDtOXYjnboCuJtPEetBNdTTEPMTrRWztVNwsKVjYDjVGPrq7lZfDoNk0wHmqB792c-Qmx2MqqmTYlk2opb3LtgOJPfMprQcFDE4TKrWM_s61f-FHZfuh3jBVW1kVWGyjTcDe97s3S6ZifoceBkx12GTOu455RmbmdlZyqhXPB0a6Pt1QgGfGuiyefIyh3hGImk-_N1j_ESadjQkIyoI0sTkFmZorA3bJ7IlgUIHTYsXcOuqQ_ynqMgHacy-Wq9iS8zZLO_J05Uwl1Xk8tie_DTCU06KoB_r4HBUWXQnhSIMOhwP9aLU6T9saqLN3CXMpT6DPTu97hY_R9zLW_9Zf3hQM96w0gSTEsYTKpQrvReyRmPxz0YCs2q5KreReccGDz5iEUgrIRxTnFnBv-6R68vhIdlUhRuNG8Aoz3to-k1Gos__GzPxn4ITPoVpqmRPoNQqxp7j7r6i1cKFnHxyfSxX5x7cE1OXiWfPjUaMMNR2KlE5uoD3_rxdS2TNajggp5Foa3bBou2qFVY0OCWtyF4FcycPPeU1rS47wD0OjxDMObIep4eKxZ70cldTUsA=w540-h304-no",
+        "alt": "Golden Gate Bridge."
+      }
+    },
 		{
 			"teaser": {
 				"header": "City Car on Embarcadero.",
