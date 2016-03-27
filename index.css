@@ -17,7 +17,9 @@
 .mg-inner {
   position: relative;
   height: 30.4em;
-  list-style: none; }
+  list-style: none;
+  margin: 0;
+  padding: 0; }
 
 .mg-navigate-left,
 .mg-navigate-right {
@@ -43,11 +45,13 @@
 
 .mg-navigate-left {
   left: 1em;
-  transform: rotate(-135deg); }
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg); }
 
 .mg-navigate-right {
   right: 1em;
-  transform: rotate(45deg); }
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg); }
 
 /**
  * Item, mainly inactive state
@@ -55,8 +59,8 @@
 .mg-item {
   position: absolute;
   z-index: 0;
+  margin: 0;
   top: 3.4em;
-  margin: 0 1.5em;
   right: 55.1em;
   left: 0;
   background: #fff; }
@@ -72,7 +76,8 @@
 .mg-item-teaser {
   width: 29em;
   padding: 0.5em 1em;
-  display: none;
+  -webkit-transform: rotateY(90deg);
+          transform: rotateY(90deg);
   position: absolute;
   right: -26em;
   top: 1.8em;
@@ -93,29 +98,47 @@
 /**
  * Currently active item
  */
-.mg-item:nth-child(2) {
+.mg-item:nth-child(3) {
   left: 11.7em;
-  right: 35em;
+  right: 30.5em;
   z-index: 100;
   top: 0; }
-  .mg-item:nth-child(2) > * {
+  .mg-item:nth-child(3) > * {
     opacity: 1; }
-  .mg-item:nth-child(2) .mg-item-teaser {
-    display: block; }
-  .mg-item:nth-child(2) .mg-item-image {
+  .mg-item:nth-child(3) .mg-item-teaser {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0); }
+  .mg-item:nth-child(3) .mg-item-image {
     width: 54em;
     height: 30.4em; }
-  .mg-item:nth-child(2) + li {
+  .mg-item:nth-child(3) + li {
     z-index: 50; }
-  .mg-item:nth-child(2) ~ li {
+  .mg-item:nth-child(3) ~ li {
     right: 0;
-    left: 55.1em; }
+    left: 58.1em; }
 
-.mg-moving {
-  z-index: 200; }
-  .mg-moving > .mg-item-teaser,
-  .mg-moving > .mg-item-image {
-    opacity: 1; }
+.mg-item {
+  -webkit-transition-property: left, right, opacity;
+  transition-property: left, right, opacity;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s; }
+
+.mg-item-image {
+  -webkit-transition-property: height, width;
+  transition-property: height, width;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s; }
+
+.mg-item-teaser {
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+          transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  -webkit-transition-duration: 0.7s;
+          transition-duration: 0.7s; }
+
 body {
 	font-size: 62.5%;
 	font-style: oblique;
