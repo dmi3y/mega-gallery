@@ -1,6 +1,6 @@
 {
   "name": "mega-gallery",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Mega gallery for ladies and gentlemen",
   "main": "index.js",
   "scripts": {
