@@ -5,6 +5,7 @@
     font-size: $gallery-font-size;
 }
     .mg-inner {
+        overflow:hidden;
         position: relative;
         height: $inner-height;
         list-style: none;

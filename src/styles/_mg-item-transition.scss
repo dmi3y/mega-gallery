@@ -1,14 +1,14 @@
 .mg-item {
-  transition-property: left, right, opacity;
-  transition-duration: 0.3s;
+  transition-property: left, right, top, opacity;
+  transition-duration: $speed * 3s;
 }
 .mg-item-image {
   transition-property: height, width;
-  transition-duration: 0.2s;
+  transition-duration: $speed * 3s;
 }
 
 .mg-item-teaser {
-  transition-property: transform;
+  transition-property: right, transform;
   transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
-  transition-duration: 0.7s;
+  transition-duration: $speed * 7s;
 }

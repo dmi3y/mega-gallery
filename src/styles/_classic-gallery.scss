@@ -9,6 +9,7 @@ $gallery-width: 962px;
 
 // Base font size
 $gallery-font-size: 10px;
+$speed: 0.1;
 
 // Navigation Arrows
 $arrow-size: 4em;
@@ -45,7 +46,7 @@ $header-font-size: 2em;
 
 $teaser-width: 29em;
 $teaser-top: 1.8em;
-$teaser-right: -26em;
+$teaser-right: 2em - $teaser-width;
 $teaser-bottom: 1.8em;
 $teaser-background: rgba(0, 0, 0, 0.75);
 $teaser-padding: 0.5em 1em;

@@ -30,7 +30,7 @@
         padding: $teaser-padding;
         transform: rotateY(90deg);
         position: absolute;
-        right: $teaser-right;
+        right: -$teaser-width;
         top: $teaser-top;
         bottom: $teaser-bottom;
         background: $teaser-background;
