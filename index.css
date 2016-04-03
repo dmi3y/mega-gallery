@@ -15,6 +15,7 @@
   font-size: 10px; }
 
 .mg-inner {
+  overflow: hidden;
   position: relative;
   height: 30.4em;
   list-style: none;
@@ -79,7 +80,7 @@
   -webkit-transform: rotateY(90deg);
           transform: rotateY(90deg);
   position: absolute;
-  right: -26em;
+  right: -29em;
   top: 1.8em;
   bottom: 1.8em;
   background: rgba(0, 0, 0, 0.75);
@@ -107,7 +108,8 @@
     opacity: 1; }
   .mg-item:nth-child(3) .mg-item-teaser {
     -webkit-transform: rotateY(0);
-            transform: rotateY(0); }
+            transform: rotateY(0);
+    right: -27em; }
   .mg-item:nth-child(3) .mg-item-image {
     width: 54em;
     height: 30.4em; }
@@ -118,22 +120,22 @@
     left: 58.1em; }
 
 .mg-item {
-  -webkit-transition-property: left, right, opacity;
-  transition-property: left, right, opacity;
+  -webkit-transition-property: left, right, top, opacity;
+  transition-property: left, right, top, opacity;
   -webkit-transition-duration: 0.3s;
           transition-duration: 0.3s; }
 
 .mg-item-image {
   -webkit-transition-property: height, width;
   transition-property: height, width;
-  -webkit-transition-duration: 0.2s;
-          transition-duration: 0.2s; }
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s; }
 
 .mg-item-teaser {
-  -webkit-transition-property: -webkit-transform;
-  transition-property: -webkit-transform;
-  transition-property: transform;
-  transition-property: transform, -webkit-transform;
+  -webkit-transition-property: right, -webkit-transform;
+  transition-property: right, -webkit-transform;
+  transition-property: right, transform;
+  transition-property: right, transform, -webkit-transform;
   -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
           transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
   -webkit-transition-duration: 0.7s;
