@@ -12,6 +12,9 @@ You always have chance to encourage development, by opening [tickets](https://gi
 
 ## Changelog
 
+### v2.0.1
+Added builds files to the repo.
+
 ### v2.0.0
 Moving towards CSS transitions. Script cleanups.
 
