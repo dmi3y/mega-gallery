@@ -8,7 +8,7 @@ Flip like gallery that uses jQuery, SASS preprocessor and Handlebars templates u
 
 ## Like it?
 
-You always have chance to encourage development, by opening (tickets)[https://github.com/dmi3y/mega-gallery/issues], helping with [wiki](https://github.com/dmi3y/mega-gallery/wiki), rasing [pull requests](https://github.com/dmi3y/mega-gallery/pulls), or by simply fulfilling my [whishes](http://www.amazon.com/gp/registry/wishlist/21E66K8CCFMBD/ref=cm_wl_huc_view).
+You always have chance to encourage development, by opening [tickets](https://github.com/dmi3y/mega-gallery/issues), helping with [wiki](https://github.com/dmi3y/mega-gallery/wiki), rasing [pull requests](https://github.com/dmi3y/mega-gallery/pulls), or by simply fulfilling my [whishes](http://www.amazon.com/gp/registry/wishlist/21E66K8CCFMBD/ref=cm_wl_huc_view).
 
 ## Changelog
 
