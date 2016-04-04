@@ -1,6 +1,6 @@
 {
   "name": "mega-gallery",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Flip like gallery, with jQuery and CSS3 transitions.",
   "main": "index.js",
   "scripts": {
