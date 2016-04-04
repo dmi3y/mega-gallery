@@ -8,7 +8,7 @@ Flip like gallery that uses jQuery, SASS preprocessor and Handlebars templates u
 
 ## Like it?
 
-You have chance to encourage development. Here is [whishlist](http://www.amazon.com/gp/registry/wishlist/21E66K8CCFMBD/ref=cm_wl_huc_view).
+You always have chance to encourage development, by opening tickets, helping with wiki, rasing pull requests, or by simply fulfilling my [whishes](http://www.amazon.com/gp/registry/wishlist/21E66K8CCFMBD/ref=cm_wl_huc_view).
 
 ## Changelog
 
@@ -16,4 +16,4 @@ You have chance to encourage development. Here is [whishlist](http://www.amazon.
 Moving towards CSS transitions. Script cleanups.
 
 ### v1.0.0
-Initial bump up. Old cold cleanup.
+Initial bump up. Old code cleanup.

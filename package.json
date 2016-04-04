@@ -1,14 +1,14 @@
 {
   "name": "mega-gallery",
   "version": "2.0.0",
-  "description": "Mega gallery for ladies and gentlemen",
+  "description": "Flip like gallery, with jQuery and CSS3 transitions.",
   "main": "index.js",
   "scripts": {
     "compile-templates": "tasks/compile-templates.sh",
     "watch-templates": "sane 'npm run compile-templates' --glob=src/templates/**/*.hbs",
     "compile-styles": "tasks/compile-styles.sh",
     "watch-styles": "npm run compile-styles -- -w",
-    "compile-scripts": "cat src/scripts/*.js > build/index.js",
+    "compile-scripts": "tasks/compile-scripts.sh",
     "watch-scripts": "sane 'npm run compile-scripts' --glob=src/scripts/*.js"
   },
   "repository": {
