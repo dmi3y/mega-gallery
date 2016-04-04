@@ -1,0 +1,24 @@
+{
+  "name": "mega-gallery",
+  "description": "Flip like gallery, with jQuery and CSS3 transitions.",
+  "main": "build/index.js",
+  "authors": [
+    "Dmitrii Lapshukov"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "gallery",
+    "jquery",
+    "jquery-plugin"
+  ],
+  "homepage": "https://github.com/dmi3y/mega-gallery",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "version": "2.0.0"
+}
