@@ -1,3 +1,3 @@
-#!/usr/bin/env sh -x
+#!/usr/bin/env bash
 
 cat ./src/scripts/gallery.js > ./build/index.js

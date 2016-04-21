@@ -1,4 +1,4 @@
-#!/usr/bin/env sh -x
+#!/usr/bin/env bash
 
 node-sass "$@" src/styles/index.scss \
 | postcss -c postcss-options.json \

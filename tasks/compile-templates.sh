@@ -1,4 +1,4 @@
-#!/usr/bin/env sh -x
+#!/usr/bin/env bash
 mkdir -p build/templates
 
 # All templates compiles to partials
