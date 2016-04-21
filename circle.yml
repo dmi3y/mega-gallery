@@ -1,0 +1,6 @@
+dependencies:
+	override:
+    - npm install --production
+
+	cache_directories:
+    - node_modules
