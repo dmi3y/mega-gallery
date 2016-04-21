@@ -12,6 +12,10 @@ You always have chance to encourage development, by opening [tickets](https://gi
 
 ## Changelog
 
+### v2.1.0
+- Fixed bug with not picking last item up for one direction scroll.
+- Natural scoll direction by default.
+
 ### v2.0.1
 Added builds files to the repo.
 
