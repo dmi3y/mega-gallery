@@ -1,4 +1,4 @@
-# Mega Gallery
+# Mega Gallery [![Build Status](https://travis-ci.org/dmi3y/mega-gallery.svg?branch=master)](https://travis-ci.org/dmi3y/mega-gallery)
 
 > Semantically correct gallery, now with [demo](http://dmi3y.github.io/mega-gallery/).
 
