@@ -1,6 +1,7 @@
 var test = require('tape')
 var fs = require('fs')
 var path = require('path')
+
 var $ = require('jquery')
 
 var renderGallery = require('../assets/renderGallery')
