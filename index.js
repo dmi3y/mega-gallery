@@ -7887,8 +7887,8 @@ $(function mgGallery () {
       var firstChild = inner.find('li:first-child')
       var lastChild = inner.find('li:last-child')
 
-      if (dir === 'left') lastChild.before(firstChild)
-      else if (dir === 'right') firstChild.after(lastChild)
+      if (dir === 'left') lastChild.after(firstChild)
+      else if (dir === 'right') firstChild.before(lastChild)
     })
   }
 })
