@@ -1,4 +1,4 @@
-# Mega Gallery
+# Mega Gallery [![Circle CI](https://circleci.com/gh/dmi3y/mega-gallery.svg?style=svg)](https://circleci.com/gh/dmi3y/mega-gallery)
 
 > Semantically correct gallery, now with [demo](http://dmi3y.github.io/mega-gallery/).
 
