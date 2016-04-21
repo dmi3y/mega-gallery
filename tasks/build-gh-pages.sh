@@ -4,7 +4,7 @@ npm run compile-styles
 npm run compile-templates
 npm run compile-scripts
 
-cat build/*.js gh-src/scripts/* > index.js
+cat bower_components/jquery/dist/jquery.slim.js build/*.js gh-src/scripts/* > index.js
 cat build/*.css gh-src/styles/* > index.css
 
 node tasks/build-gh-pages.js
