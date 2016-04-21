@@ -27,7 +27,7 @@ Handlebars.partials['mg-item'] = template({"compiler":[7,">= 4.0.0"],"main":func
     + "\" />\n    </div>\n</li>\n";
 },"useData":true});
 Handlebars.partials['mg-navigation'] = template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-    return "<span data-navigation=\"left\" class=\"mg-navigate-right\"></span>\n<span data-navigation=\"right\" class=\"mg-navigate-left\"></span>\n";
+    return "<span data-navigation=\"right\" class=\"mg-navigate-right\"></span>\n<span data-navigation=\"left\" class=\"mg-navigate-left\"></span>\n";
 },"useData":true});
 return Handlebars.partials;
 });
