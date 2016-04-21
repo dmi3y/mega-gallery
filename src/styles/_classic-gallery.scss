@@ -3,13 +3,13 @@
 //+ gallery width settings.
 
 // Main Settings
-$image-width: 540px;
-$image-height: 304px;
-$gallery-width: 962px;
+$image-width: 540px!default;
+$image-height: 304px!default;
+$gallery-width: 962px!default;
 
 // Base font size
-$gallery-font-size: 10px;
-$speed: 0.1;
+$gallery-font-size: 10px!default;
+$speed: 0.1!default;
 
 // Navigation Arrows
 $arrow-size: 4em;
