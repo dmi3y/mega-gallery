@@ -1,0 +1,54 @@
+{
+	"items": [
+    {
+      "teaser": {
+        "header": "Slide one header",
+        "text": "one"
+      },
+      "image": {
+        "src": "image-one.jpg",
+        "alt": "image one alt"
+      }
+    },
+    {
+      "teaser": {
+        "header": "Slide two header",
+        "text": "two"
+      },
+      "image": {
+        "src": "image-two.jpg",
+        "alt": "image two alt"
+      }
+    },
+    {
+      "teaser": {
+        "header": "Slide three header",
+        "text": "three"
+      },
+      "image": {
+        "src": "image-three.jpg",
+        "alt": "image three alt"
+      }
+    },
+    {
+      "teaser": {
+        "header": "Slide four header",
+        "text": "four"
+      },
+      "image": {
+        "src": "image-four.jpg",
+        "alt": "image four alt"
+      }
+    },
+    {
+      "teaser": {
+        "header": "Slide five header",
+        "text": "five"
+      },
+      "image": {
+        "src": "image-five.jpg",
+        "alt": "image five alt"
+      }
+    }
+	]
+}
